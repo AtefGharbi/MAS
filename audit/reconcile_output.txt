@@ -1,0 +1,60 @@
+== Table XV: reconciliation
+M0 S2 378 341 37 17 31 | S3 675 675 0 0 [0, 0, 0] Counter() Counter()
+M1 S2 378 370 8 4 6 | S3 675 672 0 3 [1, 0, 2] Counter({'sustained_degradation': 3}) Counter({False: 3})
+M2 S2 378 369 9 5 7 | S3 675 674 1 0 [0, 1, 0] Counter({'sustained_degradation': 1}) Counter({True: 1})
+M2b S2 378 273 105 93 30 | S3 675 672 3 0 [2, 1, 0] Counter({'sustained_degradation': 3}) Counter({True: 3})
+M3 S2 378 308 70 58 29 | S3 675 672 3 0 [2, 1, 0] Counter({'sustained_degradation': 3}) Counter({True: 3})
+== Table XVI: S2 by feeder/method (conv, median T_PF conv, mean C_msg all, max E_V^max conv)
+syn13 M0 125/126 1.95 87 1.1e-11
+syn13 M1 126/126 1.0 236 6.0e-05
+syn13 M2 126/126 1.0 360 6.0e-05
+syn13 M2b 102/126 0.77 3356 6.0e-05
+syn13 M3 121/126 0.95 1219 6.0e-05
+syn34 M0 117/126 3.3 326 4.2e-11
+syn34 M1 124/126 1.51 736 1.7e-04
+syn34 M2 124/126 1.59 1861 1.7e-04
+syn34 M2b 90/126 0.77 14533 1.7e-04
+syn34 M3 106/126 1.15 9854 1.7e-04
+syn123 M0 99/126 5.43 3734 7.8e-11
+syn123 M1 120/126 2.92 11999 2.7e-04
+syn123 M2 119/126 2.81 23766 2.7e-04
+syn123 M2b 81/126 1.19 80133 2.7e-04
+syn123 M3 81/126 1.19 79375 2.7e-04
+M0 false alarms 0 reroutes 0
+M1 false alarms 0 reroutes 0
+M2 false alarms 0 reroutes 0
+M2b false alarms 172509 reroutes 35092
+M3 false alarms 137580 reroutes 29850
+async converged runs with E_V^max>1e-6: 226 latencies: [0, 10]
+== Table XVIII: S3 by method/fault class
+M0 routed_avail 300/300 1.96 10.42 287 0 0 0
+M0 routed_unavail 300/300 2.17 11.22 319 0 0 0
+M0 complete 75/75 6.58 20.84 60 0 0 0
+M1 routed_avail 300/300 0.9 8.87 145 0 0 0
+M1 routed_unavail 297/300 1.16 9.12 127 0 0 0
+M1 complete 75/75 5.98 20.22 60 0 0 0
+M2 routed_avail 299/300 0.89 8.83 147 0 0 0
+M2 routed_unavail 300/300 1.11 8.79 129 0 0 0
+M2 complete 75/75 5.98 20.22 60 0 0 0
+M2b routed_avail 297/300 0.89 5.05 6 102 19 1
+M2b routed_unavail 300/300 1.18 7.54 58 65 87 54
+M2b complete 75/75 6.24 21.28 47 76 125 1561
+M3 routed_avail 297/300 0.89 5.02 6 106 19 1
+M3 routed_unavail 300/300 1.11 7.48 58 59 87 43
+M3 complete 75/75 6.21 21.58 47 89 125 2005
+== Table XIX: S3 by feeder
+syn13 [225, 224, 225, 223, 223]
+syn34 [225, 225, 224, 224, 224]
+syn123 [225, 223, 225, 225, 225]
+S3 false alarms M2b+M3 total 3665 complete-outage 3566 syn123 complete 3502 syn123 by duration {0.1: 0, 1: 336, 5: 386, 30: 1485, 60: 1295}
+== Table XXI: non-converged S3 records
+M2b syn13 sustained_degradation 5 True 4 300.0 1 668959372f3e
+M3 syn13 sustained_degradation 5 True 4 300.0 1 668959372f3e
+M2b syn13 sustained_degradation 30 True 0 300.0 1 4baf05f8ecb0
+M3 syn13 sustained_degradation 30 True 0 300.0 1 4baf05f8ecb0
+M1 syn13 sustained_degradation 30 False 0 2.51 0 ffd04466afd4
+M2b syn34 sustained_degradation 30 True 4 300.0 1 1c4c8b3d1955
+M3 syn34 sustained_degradation 30 True 4 300.0 1 1c4c8b3d1955
+M2 syn34 sustained_degradation 60 True 1 300.0 0 9c26d18b4aff
+M1 syn123 sustained_degradation 5 False 2 3.67 0 2a8fab7fc6a9
+M1 syn123 sustained_degradation 60 False 3 3.43 0 33b9dddefe69
