@@ -1,0 +1,11 @@
+method,feeder,fault,duration_s,route_available,seed,status,recorded_T_PF_s,failure_type,reroutes,restarts,suspects,events,C_msg,trace_id,error
+M1,syn123,sustained_degradation,5,False,2,timeout,3.667,stall,0,0,0,6010,12920,2a8fab7fc6a9,
+M1,syn123,sustained_degradation,60,False,3,timeout,3.434,stall,0,0,0,4702,9915,33b9dddefe69,
+M2b,syn13,sustained_degradation,5,True,4,timeout,300.0,cap,1,0,2,225,12185,668959372f3e,
+M3,syn13,sustained_degradation,5,True,4,timeout,300.0,cap,1,0,2,225,12185,668959372f3e,
+M1,syn13,sustained_degradation,30,False,0,timeout,2.511,stall,0,0,0,184,207,ffd04466afd4,
+M2b,syn13,sustained_degradation,30,True,0,timeout,300.0,cap,1,0,3,188,12134,4baf05f8ecb0,
+M3,syn13,sustained_degradation,30,True,0,timeout,300.0,cap,1,0,3,188,12134,4baf05f8ecb0,
+M2b,syn34,sustained_degradation,30,True,4,timeout,300.0,cap,1,0,12,551,41376,1c4c8b3d1955,
+M3,syn34,sustained_degradation,30,True,4,timeout,300.0,cap,1,0,12,551,41376,1c4c8b3d1955,
+M2,syn34,sustained_degradation,60,True,1,timeout,300.0,cap,0,0,0,528,41297,9c26d18b4aff,

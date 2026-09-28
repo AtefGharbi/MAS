@@ -1,0 +1,38 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/work/adpf_project
+collecting ... collected 30 items
+
+tests/test_adpf.py::test_cbfs_matches_newton_raphson[1] PASSED           [  3%]
+tests/test_adpf.py::test_cbfs_matches_newton_raphson[3] PASSED           [  6%]
+tests/test_adpf.py::test_reference_comparison_metrics PASSED             [ 10%]
+tests/test_adpf.py::test_feeder_json_roundtrip PASSED                    [ 13%]
+tests/test_adpf.py::test_all_partitions_share_the_fixed_point PASSED     [ 16%]
+tests/test_adpf.py::test_merge_split_inverse PASSED                      [ 20%]
+tests/test_adpf.py::test_feasible_set_rule PASSED                        [ 23%]
+tests/test_adpf.py::test_equal_depth_partition PASSED                    [ 26%]
+tests/test_adpf.py::test_invariant_ball_and_kappa PASSED                 [ 30%]
+tests/test_adpf.py::test_theorem1_bound PASSED                           [ 33%]
+tests/test_adpf.py::test_lemma1_neighborhood PASSED                      [ 36%]
+tests/test_adpf.py::test_closed_window_cannot_pass_but_half_open_can PASSED [ 40%]
+tests/test_adpf.py::test_switched_delayed_execution_converges PASSED     [ 43%]
+tests/test_adpf.py::test_methods_converge_to_reference[M0] PASSED        [ 46%]
+tests/test_adpf.py::test_methods_converge_to_reference[M1] PASSED        [ 50%]
+tests/test_adpf.py::test_methods_converge_to_reference[M2] PASSED        [ 53%]
+tests/test_adpf.py::test_methods_converge_to_reference[M2b] PASSED       [ 56%]
+tests/test_adpf.py::test_methods_converge_to_reference[M3] PASSED        [ 60%]
+tests/test_adpf.py::test_lfr_reroutes_single_link_outage PASSED          [ 63%]
+tests/test_adpf.py::test_merge_records_duplicates_and_conflicts PASSED   [ 66%]
+tests/test_adpf.py::test_two_phase_commit_success_and_epoch PASSED       [ 70%]
+tests/test_adpf.py::test_two_phase_commit_aborts PASSED                  [ 73%]
+tests/test_adpf.py::test_dpf_file_backward_compatible PASSED             [ 76%]
+tests/test_adpf.py::test_design_counts PASSED                            [ 80%]
+tests/test_adpf.py::test_spec_generation_matches_counts PASSED           [ 83%]
+tests/test_adpf.py::test_paired_units_share_trace_across_methods PASSED  [ 86%]
+tests/test_adpf.py::test_run_is_deterministic PASSED                     [ 90%]
+tests/test_adpf.py::test_unbalanced_three_phase_plain_line PASSED        [ 93%]
+tests/test_adpf.py::test_componentwise_first_block_needs_burn_in PASSED  [ 96%]
+tests/test_adpf.py::test_abstract_ablation_variants_differ PASSED        [100%]
+
+============================== 30 passed in 3.13s ==============================
